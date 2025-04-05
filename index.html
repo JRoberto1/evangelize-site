@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evangelize+</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+      }
+
+      .navbar ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        font-size: 1.8rem;
+        background: none;
+        border: none;
+        color: #5627ff;
+        margin-left: auto;
+        cursor: pointer;
+      }
+
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+
+      .solution-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .solution-card img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Evangelize<span class="plus">+</span></h1>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <img src="img/banner-home.png" alt="Banner Evangelize+" style="width: 100%; border-radius: 12px; margin-bottom: 30px;">
+        <h2 class="hero-title">Mais que <span class="highlight">mídia</span>, uma <span class="highlight">Missão</span></h2>
+        <p class="hero-subtitle">Impulsionamos o ministério da sua igreja com estratégia, identidade e presença digital.</p>
+        <a href="#solucoes" class="btn-primary">Descubra como</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre nós</h2>
+        <img src="img/sobre-nos.png" alt="Equipe Evangelize+" style="width: 100%; max-width: 900px; border-radius: 12px; display: block; margin: 30px auto;">
+        <p class="section-desc">A Evangelize+ é uma agência digital voltada exclusivamente para igrejas, ministérios e líderes cristãos. Combinamos design, tecnologia e propósito para comunicar o Reino com excelência.</p>
+      </div>
+    </section>
+
+    <section id="solucoes" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Nossas Soluções</h2>
+        <div class="solution-grid">
+          <div class="solution-card">
+            <img src="img/servico-estrategia.png" alt="Estratégia de Marketing" />
+            <h3>Estratégia de Marketing</h3>
+            <p>Desenvolvemos planos de ação estratégicos para ampliar o alcance da sua igreja e fortalecer a comunicação com propósito, identidade e foco em resultados.</p>
+          </div>
+          <div class="solution-card">
+            <img src="img/servico-websites.png" alt="Criação de Websites" />
+            <h3>Criação de Websites</h3>
+            <p>Sites responsivos, rápidos e visualmente impactantes que refletem a missão e os valores da sua igreja ou ministério.</p>
+          </div>
+          <div class="solution-card">
+            <img src="img/servico-redes-sociais.png" alt="Redes Sociais" />
+            <h3>Gestão de Redes Sociais</h3>
+            <p>Cuidamos do conteúdo, design e agendamento das suas redes sociais para conectar com mais pessoas e transmitir a Palavra de forma relevante.</p>
+          </div>
+          <div class="solution-card">
+            <img src="img/servico-design.png" alt="Design Ministerial" />
+            <h3>Design Gráfico Ministerial</h3>
+            <p>Artes para cultos, eventos, séries de mensagens, folders e identidade visual com excelência e propósito.</p>
+          </div>
+          <div class="solution-card">
+            <img src="img/servico-inbound.png" alt="Inbound Marketing Cristão" />
+            <h3>Inbound Marketing Cristão</h3>
+            <p>Conteúdo que atrai, evangeliza e discipula por meio de textos, vídeos e recursos digitais.</p>
+          </div>
+          <div class="solution-card">
+            <img src="img/servico-videos.png" alt="Vídeos e Transmissões" />
+            <h3>Produção de Vídeos e Transmissões</h3>
+            <p>Gravação e transmissão de cultos e eventos com qualidade e impacto espiritual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Evangelize+ | Mais que mídia, uma Missão.</p>
+    </div>
+  </footer>
+</body>
+</html>
